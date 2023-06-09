@@ -1,5 +1,7 @@
+### EX NO : 04
+### DATE  : 
 # Implementation-of-Transfer-Learning
-## Aim
+## Aim :
 To Implement Transfer Learning for CIFAR-10 dataset classification using VGG-19 architecture.
 ## Problem Statement and Dataset
 The CIFAR-10 dataset consists of 60000 32x32 colour images in 10 classes, with 6000 images per class. There are 50000 training images and 10000 test images.
@@ -7,7 +9,7 @@ The CIFAR-10 dataset consists of 60000 32x32 colour images in 10 classes, with 6
 The dataset is divided into five training batches and one test batch, each with 10000 images. The test batch contains exactly 1000 randomly-selected images from each class. The training batches contain the remaining images in random order, but some training batches may contain more images from one class than another. Between them, the training batches contain exactly 5000 images from each class.
 VGG19 is a variant of the VGG model which in short consists of 19 layers (16 convolution layers, 3 Fully connected layer, 5 MaxPool layers and 1 SoftMax layer).
 
-## DESIGN STEPS
+## DESIGN STEPS :
 ### STEP 1:
 Import tensorflow and preprocessing libraries
 
@@ -22,7 +24,7 @@ Compile and fit the model
 
 ### STEP 5:
 Predict for custom inputs using this model
-## PROGRAM
+## PROGRAM :
 `
 ### Libraries
 ```py
@@ -98,17 +100,17 @@ print(confusion_matrix(y_test,x_test_predictions))
 
 print(classification_report(y_test,x_test_predictions))
 ```
-## OUTPUT
-### Training Loss, Validation Loss Vs Iteration Plot
+## OUTPUT :
+### Training Loss, Validation Loss Vs Iteration Plot:
 ![output](out1.png)
-### Classification Report
+### Classification Report:
 ![output](class.png)
-### Confusion Matrix
+### Confusion Matrix:
 ![output](conf.png)
-### Conclusion
+### Conclusion:
 We got an Accuracy of 60% with this model.There could be several reasons for not achieving higher accuracy. Here are a few possible explanations
 1. Dataset compatibility
 2. Inadequate training data:
 3. Model capacity
-## RESULT
+## RESULT :
 Thus, transfer Learning for CIFAR-10 dataset classification using VGG-19 architecture is successfully implemented.
